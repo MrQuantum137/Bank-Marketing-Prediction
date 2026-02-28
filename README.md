@@ -1,10 +1,20 @@
-# Bank Marketing Prediction (XGBoost)
-This project uses XGBoost and Bayesian Optimization to predict whether a customer will subscribe to a bank term deposit.
+# Bank Marketing Campaign Prediction using XGBoost
 
-Key Tech Used:
+This project implements a high-performance machine learning pipeline to predict whether a client will subscribe to a bank term deposit based on marketing campaign data.
 
-XGBoost Pipeline: Integrated Target Encoding for categorical variables.
+## 🚀 Technical Highlights
+* **Advanced Pipeline:** Integrated `TargetEncoder` and `XGBClassifier` into a single Scikit-Learn Pipeline to prevent data leakage.
+* **Hyperparameter Tuning:** Utilized **Bayesian Optimization** (`BayesSearchCV`) instead of standard GridSearch for more efficient and intelligent parameter discovery.
+* **Categorical Handling:** Applied target encoding to high-cardinality features like `job_type` and `education` to maximize the model's predictive power.
+* **Performance Metric:** Optimized for **ROC-AUC** to ensure a balanced evaluation of the model's ability to distinguish between classes.
 
-Optimization: Used BayesSearchCV for advanced hyperparameter tuning.
+## 🛠️ Tech Stack
+* **Language:** Python
+* **Key Libraries:** `XGBoost`, `Scikit-learn`, `Scikit-optimize` (skopt), `Pandas`, `Matplotlib`.
 
-Evaluation: Optimized for ROC-AUC score and visualized feature importance.
+## 📊 Results
+The model achieved a **Test ROC-AUC score of ~0.785**, demonstrating strong predictive capabilities. Feature importance analysis revealed that social and economic indicators were primary drivers of the prediction.
+
+## 📂 Project Structure
+* `test prototype.ipynb`: The complete development workflow from EDA to optimization.
+* `bank-additional-full.csv`: The primary dataset (Sourced from UCI Machine Learning Repository).
